@@ -1,0 +1,12 @@
+version: '3.1'
+
+services:
+  laba:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: unless-stopped
+    ports:
+     - 127.0.0.1:19999:19999
+    volumes:
+     - ./logs:/var/log/supervisor
