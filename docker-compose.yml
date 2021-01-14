@@ -7,6 +7,4 @@ services:
       dockerfile: Dockerfile
     restart: unless-stopped
     ports:
-     - 127.0.0.1:19999:19999
-    volumes:
-     - ./logs:/var/log/supervisor
+      - 127.0.0.1:9001:9001
